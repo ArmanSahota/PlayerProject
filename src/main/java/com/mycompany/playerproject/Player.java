@@ -13,16 +13,16 @@ public class Player {
     String _player;
     int _number;
     
- public Player(String Player, int Number){
-        
-        Number = _number;
-        Player = _player;
-    }
- public String getName() {
+public Player(String player, int number) {
+    _player = player;
+    _number = number;
+}
+public String getName() {
         return _player;
     }
 
  public int getNumber() {
         return _number;
+        
     }
 }

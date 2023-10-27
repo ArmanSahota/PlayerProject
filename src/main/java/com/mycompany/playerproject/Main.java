@@ -16,11 +16,11 @@ public class Main {
         ArrayList<Player> players = new ArrayList<>();
 
         // Preload the list with 5 players (you can customize names and numbers)
-        players.add(new Player("Player1", 1));
-        players.add(new Player("Player2", 2));
-        players.add(new Player("Player3", 3));
-        players.add(new Player("Player4", 4));
-        players.add(new Player("Player5", 5));
+        players.add(new Player("Jack", 2));
+        players.add(new Player("John", 2));
+        players.add(new Player("Cam", 3));
+        players.add(new Player("Larry", 4));
+        players.add(new Player("Alvin", 5));
 
         while (true) {
             System.out.println("Select an option:");
@@ -57,7 +57,7 @@ public class Main {
 
     private static void displayAllPlayers(ArrayList<Player> players) {
         for (Player player : players) {
-            System.out.println("Name: " + player.getName() + ", Number: " + player.getNumber());
+            System.out.println("Name: " + player.getName().toString()  + ", Number: " + player.getNumber());
         }
     }
 
@@ -77,6 +77,7 @@ public class Main {
             if (player.getName().toLowerCase().charAt(0) == Character.toLowerCase(letter)) {
                 System.out.println("Name: " + player.getName() + ", Number: " + player.getNumber());
             }
+            else System.out.println("No Players with this letter");
         }
     }
 
